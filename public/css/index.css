@@ -1,0 +1,30 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#circle {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+}
+
+#north-circle {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    left: 50%;
+    top: -2px;
+}
