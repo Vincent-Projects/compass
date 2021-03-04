@@ -18,16 +18,16 @@ function onClick() {
 
 
 function handleOrientation(event) {
-    const alpha = event.alpha;
-    const beta = event.beta;
-    const gamma = event.gamma;
+    console.log(event.accelerationIncludingGravity.x)
+    const alpha = event.accelerationIncludingGravity.x;
+    const beta = event.accelerationIncludingGravity.y;
+    const gamma = event.accelerationIncludingGravity.z;
 
     const x = document.getElementById('x');
     const y = document.getElementById('y');
     const z = document.getElementById('z');
 
-    alert(alpha);
-    x.innerHTML = `${alpha}`;
+    x.innerHTML = alpha;
     y.innerHTML = beta;
     z.innerHTML = gamma;
 }
