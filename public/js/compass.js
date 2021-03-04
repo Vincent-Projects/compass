@@ -26,9 +26,9 @@ function handleOrientation(event) {
     const y = document.getElementById('y');
     const z = document.getElementById('z');
 
-    x.innerHTML = alpha;
-    y.innerHTML = beta;
-    z.innerHTML = gamma;
+    x.innerHTML = Math.floor(alpha * 100) / 100;
+    y.innerHTML = Math.floor(beta * 100) / 100;
+    z.innerHTML = Math.floor(gamma * 100) / 100;
 }
 
 const permissionsBtn = document.getElementById('permissionsBtn');
